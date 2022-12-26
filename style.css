@@ -1,0 +1,98 @@
+*{
+    
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    height: 100vh;
+    background-image: url('spotilife.jpg');
+}
+.container {
+    width: 80%;
+    height: 80%;
+    margin: 10px auto;
+}
+.main {
+    left: 33.5%;
+    height: 700px;
+    width: 500px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow:  hidden;
+}
+.list-img {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.list-img div{
+    flex: 1;
+    padding:  5px;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+.control {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: #dadada;
+    transform: translateY(-50px);
+    cursor: pointer;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+.active{
+    background: rgb(231, 70, 70);
+}
+.img-feature {
+    transition: 1s;
+    
+}
+@keyframes slideLeft {
+    0% {
+        transform:  translateX(100%);
+    }
+    100%{
+        transform:  translateX(0);
+    }
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+        transform:  translateX(0);
+    }
+}
+button {
+    position: absolute;
+    left: 32%;
+    top: 93%;
+    color: rgba(254, 11, 11, 0.936);
+    font-weight: bold;
+    transform:  translate3d(-50%, -50%);
+    border:  none;   
+    font-family: cursive;
+    font-size: 40px;
+    box-shadow: 30px;
+    background-color: transparent;
+}
+audio {
+    margin-left: 1%;
+    margin-top: 6%;
+    opacity: 0.6;
+}
